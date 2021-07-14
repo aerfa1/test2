@@ -1,0 +1,38 @@
+{
+  "name": "qiankun-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install:one": "cd child-one && npm install",
+    "install:two": "cd child-two && npm install",
+    "install:main": "cd main && npm install",
+    "install-all": "npm-run-all install:*",
+    "start:one": "cd child-one && npm run serve ",
+    "start:two": "cd child-two && npm run serve",
+    "start:main": "cd main && npm run serve",
+    "start-all": "npm-run-all --parallel start:*",
+    "serve-all": "npm-run-all --parallel start:*",
+    "build:one": "cd child-one && npm run build",
+    "build:two": "cd child-two && npm run build",
+    "build:main": "cd main && npm run build",
+    "build-all": "npm-run-all --parallel build:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/go-on-the-way/qiankun-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/go-on-the-way/qiankun-demo/issues"
+  },
+  "homepage": "https://github.com/go-on-the-way/qiankun-demo#readme",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  },
+  "dependencies": {
+    "chromedriver": "^91.0.1"
+  }
+}
